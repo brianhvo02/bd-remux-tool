@@ -1,0 +1,4 @@
+#!/bin/sh
+
+cd test
+md5sum -c Sintel-Bluray.iso.md5 || curl -o Sintel-Bluray.iso "https://download.blender.org/durian/movies/Sintel-Bluray.iso"
