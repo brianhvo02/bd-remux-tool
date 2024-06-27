@@ -3,6 +3,7 @@
     "dependencies": {
         "node-addon-api": "^1.1.0"
     },
+    "type": "module",
     "scripts": {
         "build": "node-gyp rebuild && tsc",
         "pretest": "./test/download_sintel && npm run build",
@@ -15,7 +16,7 @@
     "license": "GPL-3.0",
     "description": "",
     "devDependencies": {
-        "@types/node": "^7.0.22",
+        "@types/node": "20.0.0",
         "typescript": "^5.5.2"
     }
 }

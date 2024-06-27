@@ -37,4 +37,11 @@ initTests.forEach(([test, throws], n) => {
     else assert.doesNotThrow(test, undefined, failureText);
 });
 
+const discInfoTest = function GetDiscInfo() {
+    console.log('[DISC] Get disc info');
+    const bluray = new Bluray(BD_DISK_PATH);
+    bluray.getDiscInfo();
+}
+assert.doesNotThrow(discInfoTest, undefined, '[DISC] Test failed.');
+
 console.log('All tests successful!');
